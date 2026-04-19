@@ -14,6 +14,6 @@ describe('getAPIKey', () => {
 
     it('should return the API key if authorization header is in the correct format', () => {
         const headers = { authorization: 'ApiKey my-secret-key' };
-        expect(getAPIKey(headers)).toBe('my-ecret-key');
+        expect(getAPIKey(headers)).toBe('my-secret-key');
     });
 })
